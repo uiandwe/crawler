@@ -1,0 +1,4 @@
+node_modules/
+.diea
+npm-debug.log
+static/
