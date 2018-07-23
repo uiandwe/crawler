@@ -2,3 +2,4 @@ node_modules/
 .diea
 npm-debug.log
 static/
+app/assets/bin/
