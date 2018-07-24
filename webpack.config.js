@@ -1,4 +1,5 @@
-var path = require('path');
+const path = require('path');
+const webpack = require("webpack");
 
 module.exports = {
     entry: './app/assets/entry.js',
@@ -10,5 +11,10 @@ module.exports = {
         loaders: [
             { test: /\.sass$/, loader: 'style!css!sass!scss' }
         ]
-    }
+    },
+    plugins: [
+        new webpack.optimize.UglifyJsPlugin({
+            compress: { warnings: false }
+        })
+    ]
 };
